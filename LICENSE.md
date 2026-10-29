@@ -1,0 +1,179 @@
+[index.html](https://github.com/user-attachments/files/34116110/index.html)
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>银河大药房 - 您的贴心健康邻居</title>
+    <style>
+        :root {
+            --primary: #059669; /* 健康绿 */
+            --primary-dark: #047857;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .card-title {
+            font-size: 18px;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid #ecfdf5;
+            padding-bottom: 8px;
+        }
+        .info-list {
+            list-style: none;
+        }
+        .info-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 15px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+        }
+        .grid-item {
+            background-color: #f1f5f9;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .grid-item h4 {
+            color: var(--text-dark);
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        .grid-item p {
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💊 银河大药房</h1>
+        <p>专业·贴心·持证执业药师在线指导</p>
+    </header>
+
+    <div class="container">
+        <!-- 营业与联系信息 -->
+        <div class="card">
+            <h2 class="card-title">📍 门店信息</h2>
+            <ul class="info-list">
+                <li>⏰ <strong>营业时间：</strong> 08:00 - 22:00（全年无休）</li>
+                <li>📍 <strong>门店地址：</strong> xx市xx区xx路123号（xx小区东门旁）</li>
+                <li>📞 <strong>咨询电话：</strong> 010-88888888</li>
+                <li>💬 <strong>执业药师微信：</strong> 138-0000-0000（可微信订药/送货上门）</li>
+            </ul>
+            <a href="tel:01088888888" class="btn" style="margin-top: 15px;">📞 立即电话咨询</a>
+        </div>
+
+        <!-- 服务范围 -->
+        <div class="card">
+            <h2 class="card-title">✨ 服务与特色</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h4>处方药/非处方药</h4>
+                    <p>常用药齐全 品质保障</p>
+                </div>
+                <div class="grid-item">
+                    <h4>免费测血压</h4>
+                    <p>进店免费测量与记录</p>
+                </div>
+                <div class="grid-item">
+                    <h4>周边送货上门</h4>
+                    <p>满额免费送药到家</p>
+                </div>
+                <div class="grid-item">
+                    <h4>医保定点</h4>
+                    <p>支持医保刷卡结算</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 经营品类 -->
+        <div class="card">
+            <h2 class="card-title">📦 主营范围</h2>
+            <p style="color: var(--text-muted); font-size: 14px;">
+                感冒发烧 | 胃肠用药 | 慢病用药（高血压/糖尿病）| 中药饮片 | 医疗器械（血糖仪/血压计）| 营养保健品 | 生育用品
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 银河大药房 版权所有 | 药品经营许可证编号：JY1234567890</p>
+    </footer>
+
+</body>
+</html>
+
